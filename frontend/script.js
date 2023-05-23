@@ -1,38 +1,37 @@
-// Write the Frontend tasks here
-let cica = "Client";
-console.log(cica);
-let kacsa = cica.split("").reverse().join("");
-console.log(kacsa);
+let text = "Client";
+console.log(text);
+let splittedText = text.split("").reverse().join("");
+console.log(splittedText);
 
-function numberWords(cica){
-   let words = cica.split(' ')
+function numberWords(text){
+   let words = text.split(' ')
    let wordsLength = []
-   words.forEach((cica) => {
-    wordsLength.push(cica + " = " +cica.length)
+   words.forEach((text) => {
+    wordsLength.push(text + " = " + text.length)
 
    });
    return wordsLength
 };
-console.log(numberWords(cica));
+console.log(numberWords(text));
 
-function threeWord(cica){
-    let words = cica.split(' ')
+function threeWord(text){
+    let words = text.split(' ')
     let wordsLength = []
-    words.forEach((cica) => {
-     wordsLength.push(cica + " = " +(cica.length*3))
+    words.forEach((text) => {
+     wordsLength.push(text + " = " + (text.length*3))
  
     });
     return wordsLength
 };
-console.log(threeWord(cica));
+console.log(threeWord(text));
 
-function fiveWord(cica){
-    let words = cica.split(' ')
+function fiveWord(text){
+    let words = text.split(' ')
     let wordsLength = []
-    words.forEach((cica) => {
-     wordsLength.push(cica + " = " +(cica.length/5))
+    words.forEach((text) => {
+     wordsLength.push(text + " = " + (text.length/5))
  
     });
     return wordsLength
 };
-console.log(fiveWord(cica));
+console.log(fiveWord(text));
